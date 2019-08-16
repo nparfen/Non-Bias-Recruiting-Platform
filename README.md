@@ -91,7 +91,7 @@ Create `.env` file into the root of the `client` folder. Also you can create `.e
 REACT_APP_NAME=
 REACT_APP_GOOGLE_PLACES_API_KEY=
 REACT_APP_API_URL=
-REACT_APP_LINKEDIN_WINDOW= // api url + /login/linkedin
+REACT_APP_LINKEDIN_WINDOW= // server domain + /login/linkedin
 ```
 
 Then start the web application:
