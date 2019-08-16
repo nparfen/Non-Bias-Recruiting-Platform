@@ -2,8 +2,9 @@
 
 Demo of non-bias recruiting platform using MongoDB, Fastify, Swagger, Google Cloud Storage, React.js, Redux.js, Google Places API and Material-UI
 
-[Try it online](https://aspire-example.herokuapp.com/)  
-Available such routes:  
+## Demo
+
+[Try it online](https://aspire-example.herokuapp.com/). Available such routes as:  
   - Unauthorized:
     * [/](https://aspire-example.herokuapp.com/)
     * [/login](https://aspire-example.herokuapp.com/login)
