@@ -18,7 +18,7 @@ const mongoose = require('mongoose')
 
 // Import Swagger Options
 const swagger = require('./config/swagger')
-const { DB_USERNAME, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT, LINKEDIN_AUTH_ID, LINKEDIN_AUTH_SECRET, LINKEDIN_CALLBACK, PORT, API_URL } = require('./config/app')
+const { DB_USERNAME, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT, LINKEDIN_AUTH_ID, LINKEDIN_AUTH_SECRET, LINKEDIN_CALLBACK, PORT, API_URL, JWT_SECRET } = require('./config/app')
 
 // Connect to DB
 mongoose.connect(`mongodb://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`)
@@ -34,7 +34,7 @@ fastify
         }
     })
     .register(require('fastify-jwt'), { 
-        secret: 'supersecret'
+        secret: JWT_SECRET
     })
     .register(require('fastify-auth'))
     .register(require('fastify-cors'), { 

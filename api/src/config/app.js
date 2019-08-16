@@ -12,7 +12,8 @@ const values = {
     API_URL,
     PORT,
     SWAGGER_HOST,
-    SWAGGER_SCHEMES
+    SWAGGER_SCHEMES,
+    JWT_SECRET
 } = process.env
 
 module.exports = values;

@@ -57,6 +57,7 @@ Rename Google Cloud Storage JSON API private key to `gcs.json` and copy it into 
 ```
 PORT=
 API_URL=
+JWT_SECRET=
 DB_USERNAME=
 DB_PASSWORD=
 DB_HOST=
