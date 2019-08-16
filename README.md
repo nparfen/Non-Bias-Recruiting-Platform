@@ -2,26 +2,26 @@
 
 Demo of non-bias recruiting platform using MongoDB, Fastify, Swagger, Google Cloud Storage, React.js, Redux.js, Google Places API and Material-UI
 
-[Try it online](https://aspire-example.herokuapp.com/)
-Available such routes:
-  Unauthorized:
-    [/](https://aspire-example.herokuapp.com/)
-    [/login](https://aspire-example.herokuapp.com/login)
-    [/signup](https://aspire-example.herokuapp.com/signup)
-    [/password-reset](https://aspire-example.herokuapp.com/password-reset)
-  Authorized:
-    Company:
-      [/assessment](https://aspire-example.herokuapp.com/assessment)
-      [/profile](https://aspire-example.herokuapp.com/profile)
-      [/shortlist](https://aspire-example.herokuapp.com/shortlist)
-      [/candidates](https://aspire-example.herokuapp.com/candidates)
-      [/jobs](https://aspire-example.herokuapp.com/jobs)
-      [/jobs/create](https://aspire-example.herokuapp.com/jobs/create)
-      [/settings](https://aspire-example.herokuapp.com/settings)
-    Candidate:
-      [/assessment](https://aspire-example.herokuapp.com/assessment)
-      [/profile](https://aspire-example.herokuapp.com/profile)
-      [/settings](https://aspire-example.herokuapp.com/settings)
+[Try it online](https://aspire-example.herokuapp.com/)  
+Available such routes:  
+  - Unauthorized:
+    * [/](https://aspire-example.herokuapp.com/)
+    * [/login](https://aspire-example.herokuapp.com/login)
+    * [/signup](https://aspire-example.herokuapp.com/signup)
+    * [/password-reset](https://aspire-example.herokuapp.com/password-reset)
+  - Authorized:
+    * Company:
+      + [/assessment](https://aspire-example.herokuapp.com/assessment)
+      + [/profile](https://aspire-example.herokuapp.com/profile)
+      + [/shortlist](https://aspire-example.herokuapp.com/shortlist)
+      + [/candidates](https://aspire-example.herokuapp.com/candidates)
+      + [/jobs](https://aspire-example.herokuapp.com/jobs)
+      + [/jobs/create](https://aspire-example.herokuapp.com/jobs/create)
+      + [/settings](https://aspire-example.herokuapp.com/settings)
+    * Candidate:
+      + [/assessment](https://aspire-example.herokuapp.com/assessment)
+      + [/profile](https://aspire-example.herokuapp.com/profile)
+      + [/settings](https://aspire-example.herokuapp.com/settings)
 
 ## Prerequisite
 
