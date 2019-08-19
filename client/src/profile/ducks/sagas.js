@@ -78,6 +78,14 @@ const company = {
     representative:{}
 }
 
+const defaultAssessment = {
+    data: {
+        culture: null,
+        personalities: null,
+        values: null
+    }
+}
+
 function* getMeFlow(){
     while (true) {
         yield take(commonTypes.GET_ME_REQUEST);
@@ -114,7 +122,8 @@ function* getMeFlow(){
                 data: {
                     ...(meResult.data.role === 'company' ? company : candidate),
                     email: meResult.data.email,
-                    ...meResult.data.data
+                    ...meResult.data.data,
+                    assessment: meResult.data.data.assessment ? meResult.data.data.assessment : defaultAssessment
                 }
             })
 

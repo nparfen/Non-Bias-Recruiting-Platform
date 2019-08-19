@@ -21,7 +21,7 @@ const swagger = require('./config/swagger')
 const { DB_USERNAME, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT, LINKEDIN_AUTH_ID, LINKEDIN_AUTH_SECRET, LINKEDIN_CALLBACK, PORT, API_URL, JWT_SECRET } = require('./config/app')
 
 // Connect to DB
-mongoose.connect(`mongodb://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`)
+mongoose.connect(`mongodb://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, { useNewUrlParser: true })
     .then(() => console.log('MongoDB connected…'))
     .catch(err => console.log(err))
 
