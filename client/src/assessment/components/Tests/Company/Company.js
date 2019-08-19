@@ -163,7 +163,7 @@ const CompanyAssessmentTests = ({
                         variant="contained" 
                         color="primary"
                         onClick={() => { saveAssessment(); skipAssessment() }}
-                        disabled={(cultureOld ? culture !== cultureOld && !_.isEmpty(culture) : !_.isEmpty(culture)) || (personalitiesOld ? personalities !== personalitiesOld && !_.isEmpty(personalities) : !_.isEmpty(personalities)) || (valuesOld ? values !== valuesOld && !_.isEmpty(values) : !_.isEmpty(values)) ? false : true}
+                        disabled={(cultureOld ? !_.isEqual(culture, cultureOld) && !_.isEmpty(culture) : !_.isEmpty(culture)) || (personalitiesOld ? !_.isEqual(personalities, personalitiesOld) && !_.isEmpty(personalities) : !_.isEmpty(personalities)) || (valuesOld ? !_.isEqual(values, valuesOld) && !_.isEmpty(values) : !_.isEmpty(values)) ? false : true}
                     >
                         Save
                     </Button>

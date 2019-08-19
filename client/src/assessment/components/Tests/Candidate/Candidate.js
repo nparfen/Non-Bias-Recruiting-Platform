@@ -98,7 +98,7 @@ const styles = theme => ({
 
 const CandidateAssessmentTests = ({ 
     classes, 
-    redux: { isNewUser, personalities }, 
+    redux: { isNewUser, personalities, personalitiesOld }, 
     skipAssessment, saveAssessment, goBack, clearAssessment, clearPersonalities 
 }) => (
     <Grid 
@@ -155,7 +155,7 @@ const CandidateAssessmentTests = ({
                         variant="contained" 
                         color="primary"
                         onClick={() => { saveAssessment(); skipAssessment() }}
-                        disabled={!_.isEmpty(personalities) ? false : true}
+                        disabled={(personalitiesOld ? !_.isEqual(personalities, personalitiesOld) && !_.isEmpty(personalities) : !_.isEmpty(personalities)) ? false : true}
                     >
                         Save
                     </Button>
