@@ -15,7 +15,7 @@
     "boom": "^7.3.0",
     "dot-object": "^1.7.1",
     "dotenv-flow": "^3.0.0",
-    "fastify": "^1.13.3",
+    "fastify": "^2.15.1",
     "fastify-auth": "^0.3.0",
     "fastify-autoload": "^0.6.0",
     "fastify-cors": "^1.0.0",
